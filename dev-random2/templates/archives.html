@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block content_title %}{{ SITENAME }} — Archives{% endblock %}
+{% block content_title %}{{ SITENAME }} — Arquivos{% endblock %}
 
 {%- block content %}
       <h1>Archives</h1>
@@ -15,7 +15,7 @@
              <li>
                 <a rel="bookmark"
                   href="{{ SITEURL }}/{{ article.url }}"
-                  title="Lien permanent vers «{{ article.title|striptags }}»">
+                  title="Link permanente de «{{ article.title|striptags }}»">
                 {{ article.title }}
                 </a>
              </li>

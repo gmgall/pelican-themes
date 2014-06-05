@@ -1,9 +1,9 @@
 <!-- includes/article_meta.html -->
-            Le <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
-            dans «<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>» 
-            par <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
+            <time datetime="{{ article.date.isoformat() }}">{{ article.locale_date }}</time>
+            em «<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>» 
+            por <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author }}</a>
             {%- if article.tags %}
-              <br />Mots-clés: 
+              <br />Tags: 
               {%- for tag in article.tags %}
               <a rel="tag" href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
               {% endfor -%}

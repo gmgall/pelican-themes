@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {%- block content %}
-      <h1 class="small-title">{% block index_title %}Tous les articles{% endblock index_title %}</h1>
+      <h1 class="small-title">{% block index_title %}Todos os artigos{% endblock index_title %}</h1>
      
          {% for article in articles_page.object_list %}        
       <article class="post">
@@ -9,7 +9,7 @@
           <h1>
             <a rel="bookmark"
                href="{{ SITEURL }}/{{ article.url }}"
-               title="Lien permanent vers «{{ article.title|striptags }}»">
+               title="Permalink «{{ article.title|striptags }}»">
                {{ article.title }}
             </a>
           </h1>
@@ -21,7 +21,7 @@
           {{ article.summary }}
         </div>
         <footer class="post-footer">
-          <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">Lire la suite...</a>
+          <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">Leia mais...</a>
         </footer>
       </article>
         {% set article = False %}

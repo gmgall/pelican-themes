@@ -15,7 +15,7 @@
         <h1>
           <a rel="bookmark"
              href="{{ SITEURL }}/{{ article.url }}"
-             title="Lien permanent vers «{{ article.title|striptags }}»">
+             title="Link permanente de «{{ article.title|striptags }}»">
              {{ article.title }}
           </a>
         </h1>
@@ -28,9 +28,9 @@
       </div>
       <footer class="post-footer">
         <div class="meta">
-            Posté dans «<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>» 
-            par <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author}}</a><br />
-            Mots-clés: {% for tag in article.tags %} #<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}
+            Postado em «<a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>» 
+            por <a href="{{ SITEURL }}/{{ article.author.url }}">{{ article.author}}</a><br />
+            Tags: {% for tag in article.tags %} #<a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% endfor %}
         </div>
       </footer>
       {% if DISQUS_SITENAME %}
